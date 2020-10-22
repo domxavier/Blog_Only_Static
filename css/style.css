@@ -1,0 +1,102 @@
+body {
+    z-index: 0;
+}
+
+.img-fluid {
+    height: 200px;
+    width: 200px;
+}
+
+.jumbotron {
+    padding: 70px 30px;
+    margin: 0px auto;
+    background-color: #648cfb;
+    color: floralwhite;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.page-title {
+    padding-top: 10px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+}
+
+.footer {
+    color: white;
+    background-color: #000266;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+.footer-links {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fa-facebook-f { 
+    color: #3b5998; 
+}
+
+.fa-twitter { 
+    color: #00aced;
+}
+
+.fa-instagram { 
+    color: #8a3ab9; 
+}
+
+.fa-youtube { 
+    color: #bb0000 
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+}
+
+.text-center .fa-envelope-o {
+    color: white;
+}
+
+.text-center .fa-instagram:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.text-center .fa-facebook-f:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.text-center .fa-twitter:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.text-center .fa-linkedin:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.text-center .fa-youtube:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.text-center .fa-envelope-o:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
