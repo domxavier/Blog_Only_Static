@@ -29,6 +29,11 @@ body {
     border-bottom: 1px ridge;
 }
 
+.post-submission {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 .footer {
     color: white;
     background-color: #000266;
