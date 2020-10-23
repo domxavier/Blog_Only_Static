@@ -40,39 +40,92 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12">
-                <div class="card bg-light mb-3">
-                    <div class="card-header">
-                        Title of Post
-                    </div>
-                    <div class="card-body">
-                        Post body
+            <div class="col-12" id="main-content">
+                <!-- Post 1 -->
+                <div>
+                    <h2>
+                        Man must explore, and this is exploration at its greatest
+                    </h2>
+                    <p>
+                        <i>
+                            Posted by Dominic Xavier on September 24, 2019
+                        </i>
+                    </p>
+                    <p>
+                        <p>
+                        Never in all their history have men been able truly to conceive of 
+                        the world as one: a single sphere, a globe, having the qualities of 
+                        a globe, a round earth in which all the directions eventually meet, 
+                        in which there is no center because every point, or none, is center — 
+                        an equal earth which all men occupy as equals. The airman's earth, 
+                        if free men make it, will be truly round: a globe in practice, not 
+                        in theory.
+                        </p>
+                        <p>
+                        Science cuts two ways, of course; its products can be used for both 
+                        good and evil. But there's no turning back from science. The early 
+                        warnings about technological dangers also come from science.
+                        </p>
+                        <p>
+                        What was most significant about the lunar voyage was not that man set 
+                        foot on the Moon but that they set eye on the earth.
+                        </p>
+                        <p>
+                        A Chinese tale tells of some men sent to harm a young girl who, upon 
+                        seeing her beauty, become her protectors rather than her violators. 
+                        That's how I felt seeing the Earth for the first time. I could not 
+                        help but love and cherish her.
+                        </p>
+                    </p>
+                </div>
+
+                <!-- Post 2 -->
+
+            </div>
+        </div>
+
+        <!-- Post Submission -->
+        <div class="row post-submission">
+            <div class="col-12 justify-content-center">
+                <h3>
+                    If you would like to scrum too, make your post now!
+                </h3>
+            </div>
+            <br><br>
+            <div class="col-10 offset-1">
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
                     </div>
                 </div>
-                <div class="card bg-light mb-3">
-                    <div class="card-header">
-                        Title of Post
+
+                <div class="form-group row">
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
                     </div>
-                    <div class="card-body">
-                        Post body
-                    </div>
-                </div>
-                <div class="card bg-light mb-3">
-                    <div class="card-header">
-                        Title of Post
-                    </div>
-                    <div class="card-body">
-                        Post body
+                    <div class="col-12 col-md-6">
+                        <input type="date" class="form-control" id="date" name="date" placeholder="Date">
                     </div>
                 </div>
-                <div class="card bg-light mb-3">
-                    <div class="card-header">
-                        Title of Post
-                    </div>
-                    <div class="card-body">
-                        Post body
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <textarea type="text" 
+                                  class="form-control" 
+                                  id="post-content" 
+                                  name="post-content" 
+                                  rows="12" 
+                                  placeholder="Scrum Away Here!">
+                        </textarea>
                     </div>
                 </div>
+
+                <div class="form-group row">
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-primary"> Scrum it! </button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
