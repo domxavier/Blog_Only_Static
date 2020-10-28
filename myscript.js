@@ -21,21 +21,33 @@ function submission() {
     //     // console.log(ex);
     // }
     
+    // try {
+    //     if(title.value === '' ||
+    //        name.value === '' ||
+    //        date.value === '' ||
+    //        post.value === '') {
+    //            throw {
+    //                message: 'Please do not leave any fields blank!'
+    //            }
+    //         }
+    // } catch (ex) {
+    //     window.alert(ex.message);
+    //     title.value = '';
+    //     date.value = '';
+    //     name.value = '';
+    //     post.value = '';
+    //     return;
+    // }
+
     try {
-        if(title.value === '' ||
-           name.value === '' ||
-           date.value === '' ||
-           post.value === '') {
-               throw {
-                   message: 'Please do not leave any fields blank!'
-               }
+        if(validateForm() === false) {
+            throw {
+                message: 'Please do not leave any fields blank!'
             }
+        }
+        
     } catch (ex) {
         window.alert(ex.message);
-        title.value = '';
-        date.value = '';
-        name.value = '';
-        post.value = '';
         return;
     }
 
@@ -126,4 +138,59 @@ function date_converter(date) {
 
     converted_date += day + ', ' + year;
     return converted_date;
+}
+
+function printError(element, msg) {
+    document.getElementById(element).innerHTML = msg;
+}
+
+function validateForm() {
+    var title = document.getElementById("title").value;
+    var owner = document.getElementById("name").value;
+    var date = document.getElementById("date").value;
+    var content = document.getElementById("post-content").value;
+
+    var titleErr = nameErr = dateErr = contentErr = true;
+
+    // Validate Post Title
+    if (title === "") {
+        printError("titleErr", "Please give your post a title");
+    } else {
+        printError("titleErr", "");
+        titleErr = false;
+    }
+
+    // Validate Title Owner
+    var regex = /^[a-zA-Z\s]+$/;
+    if (owner === "") {
+        printError("nameErr", "Please provide your name");
+    } else if (regex.test(owner) === false) {
+        printError("nameErr", "Please enter a valid name");
+    } else {
+        printError("nameErr", "");
+        nameErr = false;
+    }
+
+    // Validate Post Date
+    if (date === "") {
+        printError("dateErr", "Please give the date");
+    } else {
+        printError("dateErr", "");
+        dateErr = false;
+    }
+
+    // Validate Post Content
+    if(content === "") {
+        printError("contentErr", "Please add some content");
+    } else {
+        printError("contentErr", "");
+        contentErr = false;
+    }
+
+    if(titleErr || nameErr || dateErr || contentErr) {
+        return false;
+    } else {
+        return true;
+    }
+
 }
