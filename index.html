@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Scrummers</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+ 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-          crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"/>
-
+ 
     <script src="https://kit.fontawesome.com/4ff69881a0.js" crossorigin="anonymous"></script>
+    <title>The Scrummers - Home</title>
 </head>
-
 <body>
 
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -23,10 +22,10 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="home.html" style="padding-left: 10px; padding-right: 10px;"><img src="scrummer_icon.jpg" class="img-fluid2" height="40" width="40"></a>
+            <a class="navbar-brand mr-auto" href="#" style="padding-left: 10px; padding-right: 10px;"><img src="scrummer_icon.jpg" class="img-fluid2" height="40" width="40"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Blog </a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html"><span class="fa fa-home fa-lg"></span> Blog </a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"></span> About Us </a></li>
                     <li class="nav-item"><a class="nav-link" class="nav-link" href="contact.html"><span class="fa fa-address-card fa-lg"></span> Contact Us </a></li></ul>
             </div>
@@ -53,100 +52,22 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-12" id="main-content">
-                <!-- Post 1 -->
-                <div>
-                    <h2>
-                        Man must explore, and this is exploration at its greatest
-                    </h2>
-                    <p>
-                        <i>
-                            Posted by Dominic Xavier on September 24, 2019
-                        </i>
-                    </p>
-                    <p>
-                        
-                        Never in all their history have men been able truly to conceive of 
-                        the world as one: a single sphere, a globe, having the qualities of 
-                        a globe, a round earth in which all the directions eventually meet, 
-                        in which there is no center because every point, or none, is center — 
-                        an equal earth which all men occupy as equals. The airman's earth, 
-                        if free men make it, will be truly round: a globe in practice, not 
-                        in theory.
-                        
-                        Science cuts two ways, of course; its products can be used for both 
-                        good and evil. But there's no turning back from science. The early 
-                        warnings about technological dangers also come from science.
-                        
-                        What was most significant about the lunar voyage was not that man set 
-                        foot on the Moon but that they set eye on the earth.
-                        
-                        A Chinese tale tells of some men sent to harm a young girl who, upon 
-                        seeing her beauty, become her protectors rather than her violators. 
-                        That's how I felt seeing the Earth for the first time. I could not 
-                        help but love and cherish her.
-                        
-                    </p>
-                </div>
-                
-                <!-- Post 2 -->
-                
-
+    <div class="container self-align-center">
+        <div class="row row_content align-self-center" style="padding-top: 10px; padding-bottom: 30px; padding-top: 5%; padding-bottom: 10%;">
+            <div class="col-12" style="text-align: center;">
+                <h1 class="">
+                    Welcome to a Scrum Master's Paradise!
+                </h1>
+                <h2 style="font-style: italic;">
+                    A website dedicated to lovers of Agile and to people to love scrumming
+                </h2>
             </div>
-        </div>
-
-        <!-- Post Submission -->
-        <div class="row post-submission">
-            <div class="col-12 justify-content-center">
-                <h4>
-                    If you would like to scrum too, make your post now!
-                </h4>
-            </div>
-            <br><br>
-            <div class="col-10 offset-1">
-                <div class="form-group row">
-                    <div class="col-md-12">
-                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
-                        <div class="error" id="titleErr" style="color: red; font-style: italic;"></div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-12 col-md-6">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
-                        <div class="error" id="nameErr" style="color: red; font-style: italic;"></div>
-                    </div>
-                    <br><br>
-                    <div class="col-12 col-md-6">
-                        <input type="date" class="form-control" id="date" name="date" placeholder="Date">
-                        <div class="date" id="dateErr" style="color: red; font-style: italic;"></div>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-md-12">
-                        <textarea type="text" 
-                                  class="form-control" 
-                                  id="post-content" 
-                                  name="post-content" 
-                                  rows="12" 
-                                  placeholder="Scrum Away Here!"></textarea>
-                        <div class="post-content" id="contentErr" style="color: red; font-style: italic;"></div>
-                    </div>
-                    
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-md-10">
-                        <button type="submit" class="btn btn-primary" onclick="submission()"> Scrum it! </button>
-                    </div>
-                </div>
-
+            <div class="col-8 offset-2">
+                <img src="scrum.png" class="rounded img-responsive" style="height: auto; max-width: 100%; padding-top: 10%; padding-bottom: 10%;">
             </div>
         </div>
     </div>
+
 
     <footer class="footer">
         <div class="container">
@@ -196,6 +117,6 @@
             crossorigin="anonymous"></script>
 
     <script src="myscript.js"></script>
-
+    
 </body>
 </html>

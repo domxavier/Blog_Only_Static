@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Scrummers</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="https://kit.fontawesome.com/4ff69881a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="home.html" style="padding-left: 10px; padding-right: 10px;"><img src="scrummer_icon.jpg" class="img-fluid2" height="40" width="40"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Blog </a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><span class="fa fa-info fa-lg"></span> About Us </a></li>
+                    <li class="nav-item"><a class="nav-link" class="nav-link" href="contact.html"><span class="fa fa-address-card fa-lg"></span> Contact Us </a></li></ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-3">
+                    <img src="scrummer_icon.jpg" class="img-fluid"/>
+                </div>
+                <div class="col-12 col-sm-9 align-self-end">
+                    <div class="col-12">
+                        <h1>
+                            The Scrummers
+                        </h1>
+                    </div>
+                    <div class="col-12">
+                        A blog for scrummers who love to scrum
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-12" id="main-content">
+                <!-- Post 1 -->
+                <div>
+                    <h2>
+                        Man must explore, and this is exploration at its greatest
+                    </h2>
+                    <p>
+                        <i>
+                            Posted by Dominic Xavier on September 24, 2019
+                        </i>
+                    </p>
+                    <p>
+                        
+                        Never in all their history have men been able truly to conceive of 
+                        the world as one: a single sphere, a globe, having the qualities of 
+                        a globe, a round earth in which all the directions eventually meet, 
+                        in which there is no center because every point, or none, is center — 
+                        an equal earth which all men occupy as equals. The airman's earth, 
+                        if free men make it, will be truly round: a globe in practice, not 
+                        in theory.
+                        
+                        Science cuts two ways, of course; its products can be used for both 
+                        good and evil. But there's no turning back from science. The early 
+                        warnings about technological dangers also come from science.
+                        
+                        What was most significant about the lunar voyage was not that man set 
+                        foot on the Moon but that they set eye on the earth.
+                        
+                        A Chinese tale tells of some men sent to harm a young girl who, upon 
+                        seeing her beauty, become her protectors rather than her violators. 
+                        That's how I felt seeing the Earth for the first time. I could not 
+                        help but love and cherish her.
+                        
+                    </p>
+                </div>
+                
+                <!-- Post 2 -->
+                
+
+            </div>
+        </div>
+
+        <!-- Post Submission -->
+        <div class="row post-submission">
+            <div class="col-12 justify-content-center">
+                <h4>
+                    If you would like to scrum too, make your post now!
+                </h4>
+            </div>
+            <br><br>
+            <div class="col-10 offset-1">
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                        <div class="error" id="titleErr" style="color: red; font-style: italic;"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                        <div class="error" id="nameErr" style="color: red; font-style: italic;"></div>
+                    </div>
+                    <br><br>
+                    <div class="col-12 col-md-6">
+                        <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                        <div class="date" id="dateErr" style="color: red; font-style: italic;"></div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <textarea type="text" 
+                                  class="form-control" 
+                                  id="post-content" 
+                                  name="post-content" 
+                                  rows="12" 
+                                  placeholder="Scrum Away Here!"></textarea>
+                        <div class="post-content" id="contentErr" style="color: red; font-style: italic;"></div>
+                    </div>
+                    
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-primary" onclick="submission()"> Scrum it! </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-sm-4 align-self-center">
+                    <b>
+                        © 2020 Scrummers.org All Rights Reserved.
+                    </b>
+                </div>
+                <div class="col-6 col-sm-4 align-self-center">
+                    <b>
+                        <span class="footer-links">
+                            Contact
+                        </span>
+                        <span class="footer-links">
+                            Privacy
+                        </span>
+                        <span class="footer-links">
+                            Terms of Service
+                        </span>
+                    </b>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="text-center">
+                        <a class="btn" href="http://instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                        <a class="btn" href="http://www.facebook.com/profile.php?id=" target="_blank"><i class="fa fa-facebook-f fa-lg"></i></a>
+                        <a class="btn" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn" href="http://youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous"></script>
+
+    <script src="myscript.js"></script>
+
+</body>
+</html>
