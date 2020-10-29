@@ -47,7 +47,7 @@ function submission() {
         }
         
     } catch (ex) {
-        window.alert(ex.message);
+        console.log(ex.message);
         return;
     }
 
@@ -103,6 +103,7 @@ function submission() {
 
 
 function date_converter(date) {
+    //console.log(date);
     var converted_date = '';
 
     var year = date.slice(0,4);
@@ -135,8 +136,9 @@ function date_converter(date) {
     }
 
     var day = date.slice(8,10);
-
+    if(parseInt(year) < 2010) year = "2010";
     converted_date += day + ', ' + year;
+    console.log(converted_date);
     return converted_date;
 }
 
@@ -172,8 +174,9 @@ function validateForm() {
     }
 
     // Validate Post Date
-    if (date === "") {
-        printError("dateErr", "Please give the date");
+    console.log(date.toString().length);
+    if (date === "" || date.toString().length > 10) {
+        printError("dateErr", "Please enter a valid date");
     } else {
         printError("dateErr", "");
         dateErr = false;
